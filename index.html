@@ -13,7 +13,9 @@
             align-items: center;
             min-height: 100vh;
             background-image: url('background_151.jpeg');
-            background-size: cover;
+            background-size: contain; /* or use 'auto' or '100%' based on preference */
+            
+        
             color: white;
         }
 
@@ -81,6 +83,11 @@
             100% {
                 opacity: 1;
                 transform: translateY(0);
+            }
+        }
+        @media (max-width: 768px) {
+            body {
+                background-size: cover; /* Adjust for smaller screens if needed */
             }
         }
     </style>
